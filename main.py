@@ -1,13 +1,17 @@
-my_dict = {"name": "Alice", "age": 25, "city": "New York"}
-print(my_dict["name"])  # Виведе 'Alice'
+lst = [1, 2, 3, 1, 2, 2, 3, 4, 1]
+print(lst)
 
-my_dict["age"] = 26
-my_dict["email"] = "alice@example.com"
+d_lst = set(lst)
+lst = list(d_lst)
 
-print(my_dict)
+print(lst)
 
-del my_dict["age"]
-print(my_dict)
+numbers = {1, 2, 3}
+numbers.add(4)
+print(numbers) 
 
-print("name" in my_dict)
-print("age" in my_dict)
+numbers.remove(3)
+print(numbers)
+
+numbers.discard(3)
+print(numbers)
