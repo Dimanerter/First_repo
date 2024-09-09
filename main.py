@@ -1,10 +1,13 @@
-nums = [3,1,4,1,5,9,2]
-sorted_nums = sorted(nums)
-print(sorted_nums)
+my_dict = {"name": "Alice", "age": 25, "city": "New York"}
+print(my_dict["name"])  # Виведе 'Alice'
 
-sorted_nums_desc = sorted(nums, reverse=True)
-print(sorted_nums_desc)
+my_dict["age"] = 26
+my_dict["email"] = "alice@example.com"
 
-words = ["banana", "apple", "cherry"]
-sorted_words = sorted(words, key = len)
-print(sorted_words)
+print(my_dict)
+
+del my_dict["age"]
+print(my_dict)
+
+print("name" in my_dict)
+print("age" in my_dict)
